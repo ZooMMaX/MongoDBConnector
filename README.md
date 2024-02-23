@@ -23,7 +23,7 @@ This method gets a collection from the database using a custom MongoDB URI. It r
 <dependencies>
     <dependency>
         <groupId>ru.zoommax</groupId>
-        <artifactId>MongoBDConnector</artifactId>
+        <artifactId>MongoDBConnector</artifactId>
         <version>1.0</version>
     </dependency>
 </dependencies>
@@ -31,7 +31,7 @@ This method gets a collection from the database using a custom MongoDB URI. It r
 
 ![dependency gradle](https://img.shields.io/badge/DEPENDENCY-Gradle-02303A?style=plastic&logo=gradle)
 ```groovy
-implementation 'ru.zoommax:MongoBDConnector:1.0'
+implementation 'ru.zoommax:MongoDBConnector:1.0'
 ```
 
 ## Example
