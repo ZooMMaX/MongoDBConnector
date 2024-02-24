@@ -27,11 +27,9 @@ public class MongoDBConnector {
      * @return MongoCollection
      */
     public MongoCollection<?> getCollection(String collectionName, String databaseName, Object pojoClass){
-        CodecProvider pojoCodecProvider = PojoCodecProvider.builder().automatic(true).build();
-        CodecRegistry pojoCodecRegistry = fromRegistries(getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
-        String uri = "mongodb://127.0.0.1:27017/?retryWrites=true&w=majority";
-        MongoClient mongoClient = MongoClients.create(uri);
-        MongoDatabase database = mongoClient.getDatabase(databaseName).withCodecRegistry(pojoCodecRegistry);
+        MongoClient mongoClient = MongoConnectorInstance.getInstance("mongodb://127.0.0.1:27017/?retryWrites=true&w=majority").mongoClient;
+        MongoDatabase database = mongoClient.getDatabase(databaseName)
+                .withCodecRegistry(MongoConnectorInstance.getInstance("mongodb://127.0.0.1:27017/?retryWrites=true&w=majority").pojoCodecRegistry);
         return database.getCollection(collectionName, pojoClass.getClass());
     }
 
@@ -40,10 +38,8 @@ public class MongoDBConnector {
      * @return MongoCollection
      */
     public MongoCollection<?> getCollection(String collectionName, String databaseName, String mongodbUri, Object pojoClass){
-        CodecProvider pojoCodecProvider = PojoCodecProvider.builder().automatic(true).build();
-        CodecRegistry pojoCodecRegistry = fromRegistries(getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
-        MongoClient mongoClient = MongoClients.create(mongodbUri);
-        MongoDatabase database = mongoClient.getDatabase(databaseName).withCodecRegistry(pojoCodecRegistry);
+        MongoClient mongoClient = MongoConnectorInstance.getInstance(mongodbUri).mongoClient;
+        MongoDatabase database = mongoClient.getDatabase(databaseName).withCodecRegistry(MongoConnectorInstance.getInstance(mongodbUri).pojoCodecRegistry);
         return database.getCollection(collectionName, pojoClass.getClass());
     }
 }
