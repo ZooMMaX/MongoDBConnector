@@ -1,8 +1,8 @@
 # MongoDBConnector
 
 ![Maven Central Version](https://img.shields.io/maven-central/v/ru.zoommax/MongoDBConnector?style=plastic)
-![GitHub](https://img.shields.io/github/license/ZooMMaX/MongoBDConnector?style=plastic)
-[![GitHub issues](https://img.shields.io/github/issues/ZooMMaX/MongoBDConnector?style=plastic)](https://github.com/ZooMMaX/MongoBDConnector/issues)
+![GitHub](https://img.shields.io/github/license/ZooMMaX/MongoDBConnector?style=plastic)
+[![GitHub issues](https://img.shields.io/github/issues/ZooMMaX/MongoDBConnector?style=plastic)](https://github.com/ZooMMaX/MongoDBConnector/issues)
 
 This class is used to connect to the MongoDB database and get the collection. It uses the PojoCodecProvider to automatically map the POJO class to the MongoDB collection.
 
