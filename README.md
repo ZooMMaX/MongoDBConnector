@@ -1,6 +1,6 @@
 # MongoDBConnector
 
-![Maven Central](https://img.shields.io/maven-central/v/ru.zoommax/MongoBDConnector?style=plastic)
+![Maven Central Version](https://img.shields.io/maven-central/v/ru.zoommax/MongoDBConnector?style=plastic)
 ![GitHub](https://img.shields.io/github/license/ZooMMaX/MongoBDConnector?style=plastic)
 [![GitHub issues](https://img.shields.io/github/issues/ZooMMaX/MongoBDConnector?style=plastic)](https://github.com/ZooMMaX/MongoBDConnector/issues)
 
