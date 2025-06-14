@@ -1,4 +1,4 @@
-package ru.zoommax;
+package space.zoommax;
 
 import com.mongodb.client.MongoCollection;
 import lombok.Getter;

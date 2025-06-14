@@ -1,4 +1,4 @@
-package ru.zoommax;
+package space.zoommax;
 
 public class ExampleUsePojo {
     public static void main(String[] args) {

@@ -1,8 +1,7 @@
-package ru.zoommax;
+package space.zoommax;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
-import lombok.Getter;
 import org.bson.codecs.configuration.CodecProvider;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;

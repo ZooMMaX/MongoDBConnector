@@ -19,19 +19,21 @@ This method gets a collection from the database using a custom MongoDB URI. It r
 ## Dependency
 
 ![dependency maven](https://img.shields.io/badge/DEPENDENCY-Maven-C71A36?style=plastic&logo=apachemaven)
+
 ```xml
+
 <dependencies>
     <dependency>
-        <groupId>ru.zoommax</groupId>
+        <groupId>space.zoommax</groupId>
         <artifactId>MongoBDConnector</artifactId>
-        <version>1.1</version>
+        <version>1.2</version>
     </dependency>
 </dependencies>
 ```
 
 ![dependency gradle](https://img.shields.io/badge/DEPENDENCY-Gradle-02303A?style=plastic&logo=gradle)
 ```groovy
-implementation 'ru.zoommax:MongoBDConnector:1.1'
+implementation 'space.zoommax:MongoBDConnector:1.2'
 ```
 
 ## Example
@@ -39,7 +41,7 @@ implementation 'ru.zoommax:MongoBDConnector:1.1'
 ### ExamplePojo.java
 
 ```java
-package ru.zoommax;
+package space.zoommax;
 
 import com.mongodb.client.MongoCollection;
 import lombok.Getter;
@@ -115,7 +117,7 @@ public class ExamplePojo extends MongoDBConnector {
 ### ExampleUsePojo.java
 
 ```java
-package ru.zoommax;
+package space.zoommax;
 
 public class ExampleUsePojo {
     public static void main(String[] args) {
